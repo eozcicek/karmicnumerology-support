@@ -1,108 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Karmik Numeroloji – Destek</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #333;
-      background-color: #fdfdfd;
-    }
-    h1 {
-      color: #111;
-    }
-    a {
-      color: #1a73e8;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      margin-bottom: 2em;
-    }
-    .lang-buttons {
-      text-align: right;
-      margin-bottom: 20px;
-    }
-    .lang-buttons button {
-      margin-left: 10px;
-      padding: 6px 12px;
-      cursor: pointer;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Karmik Numeroloji – Destek</title>
+
+<!-- Google Fonts: Cinzel Decorative -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
+
+<!-- FontAwesome for icons -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    color: #f5f5f5;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .lang-buttons {
+    text-align: right;
+    margin-bottom: 30px;
+  }
+
+  .lang-buttons button {
+    background: rgba(255 255 255 / 0.2);
+    border: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .lang-buttons button:hover,
+  .lang-buttons button:focus {
+    background: rgba(255 255 255 / 0.5);
+    outline: none;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-shadow: 0 0 8px #a1a1ff;
+  }
+
+  .lang-content {
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(255 255 255 / 0.1);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0 0 0 / 0.3);
+  }
+
+  .section {
+    margin-bottom: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-shadow: 0 0 4px #8f8fff;
+  }
+
+  a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+</style>
 </head>
 <body>
-  <div class="lang-buttons">
-    <button onclick="setLang('tr')">Türkçe 🇹🇷</button>
-    <button onclick="setLang('en')">English 🇬🇧</button>
-    <button onclick="setLang('ru')">Русский 🇷🇺</button>
-  </div>
 
-  <!-- English -->
-  <div id="en" class="lang-content">
-    <h1>Karmic Numerology – Support</h1>
-    <div class="section">
-      <p>Welcome to the official support page for the <strong>Karmic Numerology</strong> app.</p>
-      <p>If you're experiencing issues, have suggestions, or need help with anything related to the app, feel free to contact us.</p>
-    </div>
-    <div class="section">
-      <h3>📧 Contact</h3>
-      <p>Email: <a href="mailto:numeroloji.karmik@gmail.com">numeroloji.karmik@gmail.com</a></p>
-    </div>
-    <div class="section">
-      <h3>🗑️ Account Deletion</h3>
-      <p>To delete your account, please fill out the form at the link below:</p>
-      <p><a href="https://eozcicek.github.io/account-deletion-page/" target="_blank">Request Account Deletion</a></p>
-    </div>
-  </div>
+<div class="lang-buttons">
+  <button onclick="setLang('tr')" aria-label="Türkçe">Türkçe 🇹🇷</button>
+  <button onclick="setLang('en')" aria-label="English">English 🇬🇧</button>
+  <button onclick="setLang('ru')" aria-label="Русский">Русский 🇷🇺</button>
+</div>
 
-  <!-- Turkish -->
-  <div id="tr" class="lang-content" style="display:none">
-    <h1>Karmik Numeroloji – Destek</h1>
-    <div class="section">
-      <p><strong>Karmik Numeroloji</strong> uygulamasının resmi destek sayfasına hoş geldiniz.</p>
-      <p>Herhangi bir sorun yaşıyorsanız, öneriniz varsa veya uygulama ile ilgili yardıma ihtiyacınız olursa bizimle iletişime geçebilirsiniz.</p>
-    </div>
-    <div class="section">
-      <h3>📧 İletişim</h3>
-      <p>E-posta: <a href="mailto:numeroloji.karmik@gmail.com">numeroloji.karmik@gmail.com</a></p>
-    </div>
-    <div class="section">
-      <h3>🗑️ Hesap Silme</h3>
-      <p>Hesabınızı silmek için aşağıdaki bağlantıdan formu doldurabilirsiniz:</p>
-      <p><a href="https://eozcicek.github.io/account-deletion-page/" target="_blank">Hesap Silme Talebi</a></p>
-    </div>
+<!-- Turkish -->
+<div id="tr" class="lang-content" style="display: none;">
+  <h1><i class="fas fa-star-and-crescent"></i> Karmik Numeroloji – Destek</h1>
+  <div class="section">
+    <p><strong>Karmik Numeroloji</strong> uygulamasının resmi destek sayfasına hoş geldiniz.</p>
+    <p>Herhangi bir sorun yaşıyorsanız, öneriniz varsa veya uygulama ile ilgili yardıma ihtiyacınız olursa bizimle iletişime geçebilirsiniz.</p>
   </div>
-
-  <!-- Russian -->
-  <div id="ru" class="lang-content" style="display:none">
-    <h1>Кармическая Нумерология – Поддержка</h1>
-    <div class="section">
-      <p>Добро пожаловать на официальную страницу поддержки приложения <strong>Кармическая Нумерология</strong>.</p>
-      <p>Если у вас возникли проблемы, есть предложения или вам нужна помощь — не стесняйтесь связаться с нами.</p>
-    </div>
-    <div class="section">
-      <h3>📧 Контакт</h3>
-      <p>Email: <a href="mailto:numeroloji.karmik@gmail.com">numeroloji.karmik@gmail.com</a></p>
-    </div>
-    <div class="section">
-      <h3>🗑️ Удаление аккаунта</h3>
-      <p>Чтобы удалить свой аккаунт, пожалуйста, заполните форму по ссылке ниже:</p>
-      <p><a href="https://eozcicek.github.io/account-deletion-page/" target="_blank">Запрос на удаление аккаунта</a></p>
-    </div>
+  <div class="section">
+    <h3>📧 İletişim</h3>
+    <p>E-posta: <a href="mailto:numeroloji.karmik@gmail.com">numeroloji.karmik@gmail.com</a></p>
   </div>
+  <div class="section">
+    <h3>🗑️ Hesap Silme</h3>
+    <p>Hesabınızı silmek için aşağıdaki bağlantıdan formu doldurabilirsiniz:</p>
+    <p><a href="https://eozcicek.github.io/account-deletion-page/" target="_blank" rel="noopener noreferrer">Hesap Silme Talebi</a></p>
+  </div>
+</div>
 
-  <script>
-    function setLang(lang) {
-      document.querySelectorAll('.lang-content').forEach(div => div.style.display = 'none');
-      document.getElementById(lang).style.display = 'block';
-    }
-  </script>
+<!-- English -->
+<div id="en" class="lang-content">
+  <h1><i class="fas fa-star-and-crescent"></i> Karmic Numerology – Support</h1>
+  <div class="section">
+    <p>Welcome to the official support page for the <strong>Karmic Numerology</strong> app.</p>
+    <p>If you're experiencing issues, have suggestions, or need help with anything related to the app, feel free to contact us.</p>
+  </div>
+  <div class="section">
+    <h3>📧 Contact</h3>
+    <p>Email: <a href="mailto:numeroloji.karmik@gmail.com">numeroloji.karmik@gmail.com</a></p>
+  </div>
+  <div class="section">
+    <h3>🗑️ Account Deletion</h3>
+    <p>To delete your account, please fill out the form at the link below:</p>
+    <p><a href="https://eozcicek.github.io/account-deletion-page/" target="_blank" rel="noopener noreferrer">Request Account Deletion</a></p>
+  </div>
+</div>
+
+<!-- Russian -->
+<div id="ru" class="lang-content" style="display: none;">
+  <h1><i class="fas fa-star-and-crescent"></i> Кармическая Нумерология – Поддержка</h1>
+  <div class="section">
+    <p>Добро пожаловать на официальную страницу поддержки приложения <strong>Кармическая Нумерология</strong>.</p>
+    <p>Если у вас возникли проблемы, есть предложения или вам нужна помощь — не стесняйтесь связаться с нами.</p>
+  </div>
+  <div class="section">
+    <h3>📧 Контакт</h3>
+    <p>Email: <a href="mailto:numeroloji.karmik@gmail.com">numeroloji.karmik@gmail.com</a></p>
+  </div>
+  <div class="section">
+    <h3>🗑️ Удаление аккаунта</h3>
+    <p>Чтобы удалить свой аккаунт, пожалуйста, заполните форму по ссылке ниже:</p>
+    <p><a href="https://eozcicek.github.io/account-deletion-page/" target="_blank" rel="noopener noreferrer">Запрос на удаление аккаунта</a></p>
+  </div>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.lang-content').forEach(div => (div.style.display = 'none'));
+    document.getElementById(lang).style.display = 'block';
+  }
+
+  // Default language on page load
+  setLang('en');
+</script>
+
 </body>
 </html>
