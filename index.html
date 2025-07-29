@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Karmik Numeroloji – Destek</title>
+<title>Karmik Numeroloji Destek</title>
 
 <!-- Google Fonts: Cinzel Decorative -->
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
@@ -52,8 +52,17 @@
   h1 {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 40px;
+    margin-bottom: 0;
     text-shadow: 0 0 8px #a1a1ff;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 1.8rem;
+    color: #dcdcdc;
+    text-shadow: 0 0 5px #8f8fff;
   }
 
   .lang-content {
@@ -101,7 +110,8 @@
 
 <!-- Turkish -->
 <div id="tr" class="lang-content" style="display: none;">
-  <h1><i class="fas fa-star-and-crescent"></i> Karmik Numeroloji – Destek</h1>
+  <h1><i class="fas fa-sparkles"></i> Karmik Numeroloji</h1>
+  <h2>Destek</h2>
   <div class="section">
     <p><strong>Karmik Numeroloji</strong> uygulamasının resmi destek sayfasına hoş geldiniz.</p>
     <p>Herhangi bir sorun yaşıyorsanız, öneriniz varsa veya uygulama ile ilgili yardıma ihtiyacınız olursa bizimle iletişime geçebilirsiniz.</p>
@@ -119,7 +129,8 @@
 
 <!-- English -->
 <div id="en" class="lang-content">
-  <h1><i class="fas fa-star-and-crescent"></i> Karmic Numerology – Support</h1>
+  <h1><i class="fas fa-sparkles"></i> Karmic Numerology</h1>
+  <h2>Support</h2>
   <div class="section">
     <p>Welcome to the official support page for the <strong>Karmic Numerology</strong> app.</p>
     <p>If you're experiencing issues, have suggestions, or need help with anything related to the app, feel free to contact us.</p>
@@ -137,7 +148,8 @@
 
 <!-- Russian -->
 <div id="ru" class="lang-content" style="display: none;">
-  <h1><i class="fas fa-star-and-crescent"></i> Кармическая Нумерология – Поддержка</h1>
+  <h1><i class="fas fa-sparkles"></i> Кармическая Нумерология</h1>
+  <h2>Поддержка</h2>
   <div class="section">
     <p>Добро пожаловать на официальную страницу поддержки приложения <strong>Кармическая Нумерология</strong>.</p>
     <p>Если у вас возникли проблемы, есть предложения или вам нужна помощь — не стесняйтесь связаться с нами.</p>
@@ -158,9 +170,7 @@
     document.querySelectorAll('.lang-content').forEach(div => (div.style.display = 'none'));
     document.getElementById(lang).style.display = 'block';
   }
-
-  // Default language on page load
-  setLang('en');
+  setLang('en'); // default language
 </script>
 
 </body>
