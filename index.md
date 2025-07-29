@@ -6,4 +6,4 @@ If you are experiencing issues or have questions about the app, please contact u
 
 You can also request account deletion using the button below:
 
-[Request Account Deletion](https://yourformlink.com)  
+[Request Account Deletion](https://eozcicek.github.io/account-deletion-page/)  
